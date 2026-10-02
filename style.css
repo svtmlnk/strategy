@@ -360,11 +360,13 @@ a {
 .contacts__info {
     background: var(--c-surface);
     border: 1px solid var(--c-line);
+    order: 1;
 }
 
 .contacts__form {
     background: var(--c-cream);
     color: var(--c-bg);
+    order: 2;
 }
 
 .requisites {
@@ -535,13 +537,21 @@ a {
         opacity: 0.5;
         right: -60px;
     }
-}
 
-@media (max-width: 640px) {
+    .contacts__info {
+        order: 2;
+    }
+
+    .contacts__form {
+        order: 1;
+    }
+
     .header__nav {
         display: none;
     }
+}
 
+@media (max-width: 640px) {
     .hero {
         padding: 40px 20px 20px;
         min-height: 0;
