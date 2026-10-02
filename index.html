@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стратегия — поставки нефтепродуктов</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500&family=Onest:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a class="logo" href="#top" aria-label="Стратегия — на главную">
+        <span class="logo__name">Стратегия</span>
+      </a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a class="header__link" href="#services">Услуги</a>
+        <a class="header__link" href="#logistics">Логистика</a>
+        <a class="header__link" href="#benefits">Преимущества</a>
+        <a class="header__link" href="#contacts">Контакты</a>
+      </nav>
+      <a class="button button--light" href="#contacts">Связаться с нами</a>
+    </header>
+
+    <main id="top">
+      <!-- Section 1: Hero -->
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Нефтепродукты с биржи — прямо к вашему складу
+          </h1>
+          <p class="hero__text">
+            Покупаем на бирже, формируем отгрузку и доставляем по железной
+            дороге. Вы получаете топливо и все документы без посредников в
+            цепочке.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#contacts"
+              >Связаться с нами</a
+            >
+            <a class="button button--ghost" href="#services">Наши услуги</a>
+          </div>
+        </div>
+        <ul class="hero__facts">
+          <li class="hero__fact">Биржевые цены</li>
+          <li class="hero__fact">Доставка по сети РЖД</li>
+          <li class="hero__fact">Любые объёмы партии</li>
+        </ul>
+      </section>
+
+      <!-- Section 2: Services -->
+      <section class="section services" id="services">
+        <h2 class="section__title">Услуги</h2>
+        <p class="section__lead">
+          Поставляем основные виды нефтепродуктов оптовыми партиями. Состав и
+          объём партии подбираем под задачу клиента.
+        </p>
+        <div class="services__grid">
+          <article class="service" data-aos="fade-right" data-aos-delay="0">
+            <h3 class="service__name">СУГ</h3>
+            <p class="service__desc">
+              Пропан, бутан и пропан-бутановые смеси (ПБТ) для коммунальных,
+              промышленных и автомобильных нужд.
+            </p>
+          </article>
+          <article class="service" data-aos="fade-left" data-aos-delay="150">
+            <h3 class="service__name">Бензины</h3>
+            <p class="service__desc">
+              Автомобильные бензины разных марок для АЗС, автопарков и
+              перепродажи.
+            </p>
+          </article>
+          <article class="service" data-aos="fade-right" data-aos-delay="300">
+            <h3 class="service__name">Дизельное топливо</h3>
+            <p class="service__desc">
+              Летнее, зимнее и арктическое дизельное топливо для транспорта,
+              сельского хозяйства и промышленности.
+            </p>
+          </article>
+          <article
+            class="service service--accent"
+            data-aos="fade-left"
+            data-aos-delay="450"
+          >
+            <h3 class="service__name">Авиационный керосин</h3>
+            <p class="service__desc">
+              Топливо для реактивных двигателей с паспортом качества для
+              аэропортов и заправочных комплексов.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section 3: Logistics -->
+      <section class="section logistics" id="logistics">
+        <h2 class="section__title">Логистика</h2>
+        <p class="section__lead">
+          От покупки до приёмки в одной цепочке. Каждый этап мы контролируем
+          сами.
+        </p>
+        <ol class="steps">
+          <li class="steps__item" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="steps__title">Закупка на бирже</h3>
+            <p class="steps__text">
+              Покупаем нужный продукт на торгах по рыночной цене.
+            </p>
+          </li>
+          <li class="steps__item" data-aos="fade-up" data-aos-delay="150">
+            <h3 class="steps__title">Формирование отгрузки</h3>
+            <p class="steps__text">
+              Собираем партию, оформляем заявку на вагоны и отгрузку.
+            </p>
+          </li>
+          <li class="steps__item" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="steps__title">Перевозка по ж/д</h3>
+            <p class="steps__text">
+              Везём цистернами по сети РЖД и сообщаем, где находится груз.
+            </p>
+          </li>
+          <li class="steps__item" data-aos="fade-up" data-aos-delay="450">
+            <h3 class="steps__title">Приёмка у клиента</h3>
+            <p class="steps__text">
+              Передаём груз на вашей станции с документами и паспортом качества.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 4: Benefits -->
+      <section class="section benefits" id="benefits">
+        <div class="benefits__intro">
+          <h2 class="section__title">Что получает клиент</h2>
+          <p class="section__lead">
+            Понятные условия поставки, прозрачная цена и никаких сюрпризов в
+            документах.
+          </p>
+        </div>
+        <ul class="benefits__list">
+          <li class="benefit" data-aos="flip-left" data-aos-delay="0">
+            <h3 class="benefit__title">Биржевое ценообразование</h3>
+            <p class="benefit__text">
+              Цена привязана к биржевым торгам, наша наценка фиксирована в
+              договоре.
+            </p>
+          </li>
+          <li class="benefit" data-aos="flip-left" data-aos-delay="150">
+            <h3 class="benefit__title">Сеть РЖД</h3>
+            <p class="benefit__text">
+              Доставляем на любую станцию, куда ходят железнодорожные цистерны.
+            </p>
+          </li>
+          <li class="benefit" data-aos="flip-left" data-aos-delay="300">
+            <h3 class="benefit__title">Гибкие объёмы</h3>
+            <p class="benefit__text">
+              Работаем и с разовой партией, и с регулярными поставками.
+            </p>
+          </li>
+          <li class="benefit" data-aos="flip-left" data-aos-delay="450">
+            <h3 class="benefit__title">Документооборот</h3>
+            <p class="benefit__text">
+              Берём на себя договоры, накладные и паспорта качества.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section 5: Contacts -->
+      <section class="section" id="contacts">
+        <div class="contacts">
+          <div class="contacts__info">
+            <h2 class="section__title">Контакты</h2>
+            <p class="section__lead">
+              Опишите, какой продукт и в каком объёме нужен. Мы ответим и
+              рассчитаем условия поставки.
+            </p>
+            <dl class="requisites">
+              <div class="requisites__row">
+                <dt class="requisites__label">Телефон</dt>
+                <dd class="requisites__value">
+                  <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+                </dd>
+              </div>
+              <div class="requisites__row">
+                <dt class="requisites__label">Почта</dt>
+                <dd class="requisites__value">
+                  <a href="mailto:info@strategiya.example"
+                    >info@strategiya.example</a
+                  >
+                </dd>
+              </div>
+              <div class="requisites__row">
+                <dt class="requisites__label">Реквизиты</dt>
+                <dd class="requisites__value">
+                  ООО «Стратегия»<br />ИНН 0000000000 · ОГРН 0000000000000
+                </dd>
+              </div>
+              <div class="requisites__row">
+                <dt class="requisites__label">Адрес</dt>
+                <dd class="requisites__value">
+                  г. Москва, ул. Примерная, д. 1, офис 100
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="contacts__form">
+            <form class="form" id="contact-form" novalidate>
+              <h3 class="form__title">Оставить заявку</h3>
+              <div class="form__row">
+                <label class="form__field"
+                  >ФИО
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    required
+                  />
+                </label>
+                <label class="form__field"
+                  >Название компании
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="company"
+                    autocomplete="organization"
+                  />
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__field"
+                  >Телефон
+                  <input
+                    class="form__input"
+                    type="tel"
+                    name="phone"
+                    autocomplete="tel"
+                    placeholder="+79990000000"
+                    pattern="\+7[0-9]{10}"
+                    required
+                  />
+                </label>
+                <label class="form__field"
+                  >Почта
+                  <input
+                    class="form__input"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+              </div>
+              <label class="form__field"
+                >Описание задачи
+                <textarea
+                  class="form__input form__input--textarea"
+                  name="message"
+                  placeholder="Продукт, объём, станция назначения"
+                ></textarea>
+              </label>
+              <label class="form__agree">
+                <input
+                  class="form__checkbox"
+                  type="checkbox"
+                  name="agree"
+                  required
+                />
+                <span>Согласен на обработку персональных данных</span>
+              </label>
+              <button class="button form__button" type="submit">
+                Отправить заявку
+              </button>
+              <p class="form__status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__brand">
+        <a class="logo" href="#top">
+          <span class="logo__name">Стратегия</span>
+        </a>
+        <p class="footer__about">
+          Оптовые поставки нефтепродуктов с биржи по железной дороге.
+          Деятельность осуществляется в соответствии с действующим
+          законодательством РФ.
+        </p>
+      </div>
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <a class="footer__link" href="#services">Услуги</a>
+        <a class="footer__link" href="#logistics">Логистика</a>
+        <a class="footer__link" href="#benefits">Преимущества</a>
+        <a class="footer__link" href="#contacts">Контакты</a>
+        <a class="footer__link" href="#">Политика конфиденциальности</a>
+      </nav>
+      <p class="footer__copy">
+        © 2026 ООО «Стратегия». Все права защищены. Информация на сайте не
+        является публичной офертой.
+      </p>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script.js"></script>
+</html>
