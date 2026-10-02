@@ -468,6 +468,54 @@ a {
     color: var(--c-bronze-dark);
 }
 
+[hidden] {
+    display: none !important;
+}
+
+.form-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 320px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.form-state__title {
+    margin: 0;
+}
+
+.form-state__text {
+    margin: 0;
+}
+
+.loader {
+    --color-1: #fff;
+    /* если фон формы светлый — поменяйте цвет */
+    --size: 1px;
+
+    width: calc(48 * var(--size));
+    height: calc(48 * var(--size));
+    border-radius: 50%;
+    display: inline-block;
+    border-top: calc(3 * var(--size)) solid var(--color-1);
+    border-right: calc(3 * var(--size)) solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* ===== Footer ===== */
 .footer {
     margin-top: 88px;
@@ -548,6 +596,10 @@ a {
 
     .header__nav {
         display: none;
+    }
+
+    .form__status{
+        margin-top: 0;
     }
 }
 

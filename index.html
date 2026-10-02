@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Стратегия — поставки нефтепродуктов</title>
+    <title>Стратегия-МС — поставки нефтепродуктов</title>
     <link rel="stylesheet" href="./style.css" />
 
     <meta
@@ -50,8 +50,8 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a class="logo" href="#top" aria-label="Стратегия — на главную">
-        <span class="logo__name">Стратегия</span>
+      <a class="logo" href="#top" aria-label="Стратегия-МС — на главную">
+        <span class="logo__name">Стратегия-МС</span>
       </a>
       <nav class="header__nav" aria-label="Основная навигация">
         <a class="header__link" href="#services">Услуги</a>
@@ -231,7 +231,7 @@
               <div class="requisites__row">
                 <dt class="requisites__label">Реквизиты</dt>
                 <dd class="requisites__value">
-                  ООО «Стратегия»<br />ИНН 0000000000 · ОГРН 0000000000000
+                  ООО «Стратегия-МС»<br />ИНН 0000000000 · ОГРН 0000000000000
                 </dd>
               </div>
               <div class="requisites__row">
@@ -275,8 +275,7 @@
                     type="tel"
                     name="phone"
                     autocomplete="tel"
-                    placeholder="+79990000000"
-                    pattern="\+7[0-9]{10}"
+                    placeholder="+7"
                     required
                   />
                 </label>
@@ -313,6 +312,31 @@
               </button>
               <p class="form__status" role="status" aria-live="polite"></p>
             </form>
+
+            <!-- Загрузка -->
+            <div class="form-state" id="form-loading" hidden>
+              <span class="loader" aria-hidden="true"></span>
+              <p class="form-state__text" role="status">Отправляем заявку…</p>
+            </div>
+
+            <!-- Успех -->
+            <div class="form-state" id="form-success" hidden>
+              <h3 class="form-state__title">Заявка отправлена</h3>
+              <p class="form-state__text">
+                Спасибо! Мы свяжемся с вами в ближайшее время.
+              </p>
+            </div>
+
+            <!-- Ошибка -->
+            <div class="form-state" id="form-failure" hidden>
+              <h3 class="form-state__title">Не удалось отправить заявку</h3>
+              <p class="form-state__text">
+                Проверьте соединение и попробуйте ещё раз или позвоните нам.
+              </p>
+              <button class="button form__button" type="button" id="form-retry">
+                Попробовать снова
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -322,7 +346,7 @@
     <footer class="footer">
       <div class="footer__brand">
         <a class="logo" href="#top">
-          <span class="logo__name">Стратегия</span>
+          <span class="logo__name">Стратегия-МС</span>
         </a>
         <p class="footer__about">
           Оптовые поставки нефтепродуктов с биржи по железной дороге.
@@ -338,7 +362,7 @@
         <a class="footer__link" href="#">Политика конфиденциальности</a>
       </nav>
       <p class="footer__copy">
-        © 2026 ООО «Стратегия». Все права защищены. Информация на сайте не
+        © 2026 ООО «Стратегия-МС». Все права защищены. Информация на сайте не
         является публичной офертой.
       </p>
     </footer>
