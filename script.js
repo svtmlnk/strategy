@@ -77,7 +77,37 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
       block: "start",
     });
   });
+
+  const navLinks = document.querySelectorAll('a[href^="#"]');
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const hash = link.getAttribute("href");
+
+    if (hash === "#") return;
+
+    const target = document.querySelector(hash);
+
+    if (!target) return;
+
+    // Удаляем класс у всех ссылок
+    navLinks.forEach((item) => {
+      item.classList.remove("header__link--active");
+    });
+
+    // Добавляем класс текущей ссылке
+    link.classList.add("header__link--active");
+
+    target.scrollIntoView({
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+      block: "start",
+    });
+  });
 });
+});
+
 AOS.init({
   once: true,
 });
